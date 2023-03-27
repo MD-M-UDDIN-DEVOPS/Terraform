@@ -1,4 +1,4 @@
-module "subnet_addrs" {
+## module "subnet_addrs" {
 source = "hashicorp/subnets/cidr"
 version = "1.0.0"
 base_cidr_block = "10.0.0.0/22"
