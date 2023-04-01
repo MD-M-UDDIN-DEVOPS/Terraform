@@ -5,12 +5,12 @@ region = "us-east-2"
 }
 
 
-#Retrieve the list of AZs in the current AWS region
+####Retrieve the list of AZs in the current AWS region
 data "aws_availability_zones" "available" {}
 data "aws_region" "current" {}
 
 
-#Define the VPC
+###Define the VPC
 resource "aws_vpc" "vpc" {
 cidr_block = var.vpc_cidr
 tags = {
