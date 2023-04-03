@@ -1,3 +1,15 @@
+# begins a single-line comment, ending at the end of the line.
+// also begins a single-line comment, as an alternative to #.
+/* and */ are start and end delimiters for a comment that might span over
+multiple lines.
+
+# IaC Buildout for Terraform Associate Exam
+/*
+Name: IaC Buildout for Terraform Associate Exam
+Description: AWS Infrastructure Buildout
+Contributors: Md
+*/
+
 ### Configure the AWS Provider
 
 provider "aws" {
@@ -115,11 +127,10 @@ vpc_id = aws_vpc.vpc.id
 route {
 cidr_block = "0.0.0.0/0"
 gateway_id = aws_internet_gateway.internet_gateway.id
-        
-        
-        
+
 #nat_gateway_id = aws_nat_gateway.nat_gateway.id
 }
+
 tags = {
 Name = "demo_public_rtb"
 Terraform = "true"
