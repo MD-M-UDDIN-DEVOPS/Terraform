@@ -257,3 +257,13 @@ default = [
 "us-east-1e"
 ]
 }
+
+# Launch template
+use_lt = true
+create_lt = true
+image_id = data.aws_ami.ubuntu.id
+instance_type = "t3.micro"
+tags_as_map = {
+Name = "Web EC2 Server 2"
+}
+}
