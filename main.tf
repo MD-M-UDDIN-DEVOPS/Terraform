@@ -268,7 +268,7 @@ Name = "Web EC2 Server 2"
 }
 }
 
-module "s3-bucket" {
+##module "s3-bucket" {
 source = "terraform-aws-modules/s3-bucket/aws"
 version = "2.11.1"
 }
