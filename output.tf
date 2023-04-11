@@ -7,7 +7,7 @@ description = "Output the ID for the primary VPC"
 value = aws_vpc.vpc.id
 }
 
-output "public_url" {
+##output "public_url" {
 description = "Public URL for our Web Server"
 value = "https://${aws_instance.web_server.private_ip}:8080/index.html"
 }
