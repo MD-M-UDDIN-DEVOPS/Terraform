@@ -26,3 +26,15 @@ default = {
 }
 }
 
+variable "variables_sub_cidr" {
+description = "CIDR Block for the Variables Subnet"
+type = string
+}
+variable "variables_sub_az" {
+description = "Availability Zone used Variables Subnet"
+type = string
+}
+variable "variables_sub_auto_ip" {
+description = "Set Automatic IP Assigment for Variables Subnet"
+type = bool
+}
