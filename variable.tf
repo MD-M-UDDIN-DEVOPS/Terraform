@@ -25,7 +25,7 @@ default = {
 "public_subnet_3" = 3
 }
 }
-
+################################################
 variable "variables_sub_cidr" {
 description = "CIDR Block for the Variables Subnet"
 type = string
